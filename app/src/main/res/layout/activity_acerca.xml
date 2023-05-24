@@ -7,20 +7,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingStart="16dp"
-    tools:context=".ui.ProductActivity">
+    tools:context=".ui.AcercaActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="332dp"
-        android:layout_height="540dp"
-        android:src="@drawable/descripcion" />
-
-    <Button
-        android:id="@+id/anadir_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/anadir"
-        android:textAllCaps="false" />
+        android:layout_height="559dp"
+        android:src="@drawable/mision" />
 
 </LinearLayout>

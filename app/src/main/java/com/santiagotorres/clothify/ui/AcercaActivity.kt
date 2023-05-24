@@ -1,28 +1,23 @@
 package com.santiagotorres.clothify.ui
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
-import com.santiagotorres.clothify.databinding.ActivityProductBinding
+import com.santiagotorres.clothify.R
+import com.santiagotorres.clothify.databinding.ActivityAcercaBinding
 
-class ProductActivity : AppCompatActivity() {
-    private lateinit var productBinding : ActivityProductBinding
+class AcercaActivity : AppCompatActivity() {
+    private lateinit var acercaBinding : ActivityAcercaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        productBinding =ActivityProductBinding.inflate(layoutInflater)
-        val view = productBinding.root
+        acercaBinding =ActivityAcercaBinding.inflate(layoutInflater)
+        val view = acercaBinding.root
         setContentView(view)
 
         // Agrega la flecha de devolver en el ActionBar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        productBinding.anadirButton.setOnClickListener{
-            Snackbar.make(productBinding.LinearLayout,"Añadido al carrito", Snackbar.LENGTH_INDEFINITE).setAction("Aceptar"){
-            }
-                .show()
-        }
     }
 
     // Agrega un método que maneje la acción de la flecha de devolver
