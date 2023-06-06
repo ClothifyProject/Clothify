@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.perfil.PerfilFragment">
 
+    <Button
+        android:id="@+id/buttonOpenGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Seleccionar imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_perfil" />
+
     <ImageView
         android:id="@+id/imagen_perfil"
         android:layout_width="140dp"
@@ -23,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="150dp"
         android:text="@string/example_name"
         android:textColor="#000000"
@@ -31,7 +41,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen_perfil" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonOpenGallery" />
 
     <TextView
         android:id="@+id/text_view_email"
