@@ -13,20 +13,13 @@
     </fragment>
 
     <fragment
-        android:id="@+id/carritoFragment"
-        android:name="com.santiagotorres.clothify.ui.CarritoFragment"
-        android:label="@string/carrito"
-        tools:layout="@layout/fragment_carrito" >
-    </fragment>
-    <fragment
         android:id="@+id/perfilFragment"
-        android:name="com.santiagotorres.clothify.ui.PerfilFragment"
+        android:name="com.santiagotorres.clothify.ui.perfil.PerfilFragment"
         android:label="@string/perfil"
         tools:layout="@layout/fragment_perfil" >
     </fragment>
     <fragment
-        android:id="@+id/acercaFragment"
-        android:name="com.santiagotorres.clothify.ui.AcercaFragment"
-        android:label="@string/acerca">
-    </fragment>
+        android:id="@+id/carritoFragment"
+        android:name="com.santiagotorres.clothify.ui.carrito.CarritoFragment"
+        android:label="@string/carrito" />
 </navigation>

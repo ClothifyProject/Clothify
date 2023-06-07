@@ -47,5 +47,12 @@
     <string name="sign_out">Cerrar sesión</string>
     <string name="example_name">Goku</string>
     <string name="email_example">goku@gmaill.com</string>
+    <string name="item_name">Artículo</string>
+    <string name="precio">precio</string>
+    <string name="precio_total">precio total</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="quantity">Cantidad</string>
+    <string name="compra">Comprar</string>
+    <string name="eliminar">eliminar</string>
 
 </resources>

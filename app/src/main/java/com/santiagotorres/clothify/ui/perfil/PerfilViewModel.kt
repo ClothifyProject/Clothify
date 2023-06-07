@@ -1,4 +1,4 @@
-package com.santiagotorres.clothify.ui
+package com.santiagotorres.clothify.ui.perfil
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,6 +10,7 @@ import com.santiagotorres.clothify.data.UserRepository
 import com.santiagotorres.clothify.model.User
 import kotlinx.coroutines.launch
 
+@Suppress("DUPLICATE_LABEL_IN_WHEN")
 class PerfilViewModel: ViewModel () {
 
 
@@ -37,9 +38,9 @@ class PerfilViewModel: ViewModel () {
                     is ResourceRemote.Success -> {
                         result.data?.documents?.forEach { document ->
                             val user = document.toObject<User>()
-                                if (user?.uid == userRepository.getUIDCurrentUser()){
-                                    _userLoaded.postValue(user)
-                                }
+                            if (user?.uid == userRepository.getUIDCurrentUser()){
+                                _userLoaded.postValue(user)
+                            }
                         }
                     }
                     is ResourceRemote.Success -> {

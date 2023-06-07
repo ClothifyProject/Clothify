@@ -2,15 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/acercaFragment"
+        android:id="@+id/acerca"
         android:icon="@drawable/informacion"
         android:title="@string/acerca" />
 
-<!--
+
     <item
         android:id="@+id/cerrar"
         android:icon="@drawable/cerrar"
         android:title="@string/cerrar" />
--->
 
 </menu>

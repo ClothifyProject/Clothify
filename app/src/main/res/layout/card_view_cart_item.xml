@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carga" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:layout_marginStart="14dp">
+
+        <TextView
+            android:id="@+id/articuloTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artículo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cantidadTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cantidad"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/precioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eliminar" />
+
+</LinearLayout>
